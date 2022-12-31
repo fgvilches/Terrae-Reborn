@@ -1,6 +1,8 @@
 import React from 'react'
-import { ChakraProvider, Stack, Input, Grid, Flex, Text, Badge, Box, Select, Button, List, Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, } from '@chakra-ui/react'
+import { IconButton, ButtonGroup, Container, ChakraProvider, Stack, Input, Grid, Flex, Text, Badge, Box, Select, Button, List, Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, } from '@chakra-ui/react'
 import { EmailIcon, ChevronDownIcon } from '@chakra-ui/icons'
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+
 import axios from 'axios';
 import { useState,useEffect } from 'react'
 const carreras = [{
@@ -114,8 +116,7 @@ const carreras = [{
 ];
 var namesearch_display = 'none'
 const baseURL = "http://159.65.218.96/api/";
-function Buscador (){
-  
+function Buscador(){
   var today = new Date(),
   date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
   var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
@@ -255,7 +256,7 @@ function Buscador (){
       <Flex
         display="flex"
         flexDirection="row"
-        alignItems="flex-start"
+        alignItems="center"
         justifyContent="flex-start"
       >
         <Text fontSize="3xl" fontWeight="bold" color="purple.500">
@@ -265,7 +266,7 @@ function Buscador (){
           ALPHA
         </Badge>
       </Flex>
-      <Text color="purple.500">Busca tus ramos y más!</Text>
+      <Text align='center' color="purple.500">Busca tus ramos facil y rápido!</Text>
     </Flex>
     <Grid p={10} gap={6} templateColumns="repeat(auto-fit, minmax(350px, 1fr))">
       <Stack>
@@ -350,6 +351,43 @@ function Buscador (){
         </Box>
       </Box>
     </Grid>
+    <Container
+    as="footer"
+    role="contentinfo"
+    py={{
+      base: '12',
+      md: '16',
+    }}
+  >
+    <Stack
+      spacing={{
+        base: '4',
+        md: '5',
+      }}
+    >
+      <Stack justify="space-between" direction="row" align="center" >
+
+        <ButtonGroup variant="ghost">
+          <IconButton
+            as="a"
+            href="https://www.linkedin.com/in/fgvilches/"
+            aria-label="LinkedIn"
+            icon={<FaLinkedin fontSize="1.25rem" />}
+          />
+          <IconButton as="a" href="https://github.com/fgvilches" aria-label="GitHub" icon={<FaGithub fontSize="1.25rem" />} />
+          <IconButton
+            as="a"
+            href="https://instagram.com/youknowshift/"
+            aria-label="Instagram"
+            icon={<FaInstagram fontSize="1.25rem" />}
+          />
+        </ButtonGroup>
+      </Stack>
+      <Text fontSize="sm" color="subtle">
+        &copy; {new Date().getFullYear()} Hecho con 🖤 por @fgvilches.
+      </Text>
+    </Stack>
+  </Container>
   </ChakraProvider>);
 }
 
