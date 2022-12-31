@@ -1,0 +1,110 @@
+carreras:{
+    {
+        "code": "ACT",
+        "description": "Actuacion"
+    },
+    {
+        "code": "ARQ",
+        "description": "Arquitectura"
+    },
+    {
+        "code": "DGA",
+        "description": "Artes Culinarias"
+    },
+    {
+        "code": "AUD",
+        "description": "Auditora (Diurno)"
+    },
+    {
+        "code": "ACG",
+        "description": "Auditoria-C.Gestion Plan Com"
+    },
+    {
+        "code": "CFM",
+        "description": "Ciencias de la Familia"
+    },
+    {
+        "code": "CYH",
+        "description": "Comunicacion y Humanidades"
+    },
+    {
+        "code": "CCL",
+        "description": "Curriculum Complentario"
+    },
+    {
+        "code": "DER",
+        "description": "Derecho"
+    },
+    {
+        "code": "DIS",
+        "description": "Diseno"
+    },
+    {
+        "code": "BAS",
+        "description": "Educacion Basica"
+    },
+    {
+        "code": "EMD",
+        "description": "Educacion Media"
+    },
+    {
+        "code": "PAR",
+        "description": "Educacion Parvularia"
+    },
+    {
+        "code": "ENF",
+        "description": "Enfermeria"
+    },
+    {
+        "code": "HIS",
+        "description": "Historia"
+    },
+    {
+        "code": "CIN",
+        "description": "Ingenieria Civil Industrial"
+    },
+    {
+        "code": "CIT",
+        "description": "Ingenieri;a Civil Informatica"
+    },
+    {
+        "code": "CPC",
+        "description": "Ingenieria Civil Plan Comun"
+    },
+    {
+        "code": "INC",
+        "description": "Ingenieria Comercial"
+    },
+    {
+        "code": "ICG",
+        "description": "Ingenieria Control Gestion"
+    },
+    {
+        "code": "KIN",
+        "description": "Kinesiologia"
+    },
+    {
+        "code": "LIT",
+        "description": "Literatura"
+    },
+    {
+        "code": "MED",
+        "description": "Medicina"
+    },
+    {
+        "code": "NUT",
+        "description": "Nutricion"
+    },
+    {
+        "code": "PER",
+        "description": "Periodismo"
+    },
+    {
+        "code": "PSI",
+        "description": "Psicologia"
+    },
+    {
+        "code": "PUB",
+        "description": "Publicidad"
+    }
+}
