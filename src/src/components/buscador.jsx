@@ -115,7 +115,7 @@ const carreras = [{
 }
 ];
 var namesearch_display = 'none'
-const baseURL = "http://159.65.218.96/api/";
+const baseURL = "https://fgvilches.ninja/api/";
 function Buscador(){
   var today = new Date(),
   date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
