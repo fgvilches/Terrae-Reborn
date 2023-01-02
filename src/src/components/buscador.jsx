@@ -117,7 +117,7 @@ const carreras = [{
 }
 ];
 var namesearch_display = 'none';
-const baseURL = "https://fgvilches.ninja/api/";
+const baseURL = "https://terrae-api.glitch.me/api/";
 function Buscador(){
   var today = new Date(),
   date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
@@ -271,9 +271,13 @@ function Buscador(){
     <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Notas de la ultima versión: </ModalHeader>
+          <ModalHeader> </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
+            <Text color="purple.500" fontWeight="bold" > Aviso: </Text>
+            <Text>Se cambió la api que obtiene los datos de terrae a un host gratuito que entra en sleep cada cierto tiempo, por lo que si no te cargan los datos, porfavor recarga la pagina y espera unos minutos.</Text>
+            <Text>---------------------------------</Text>
+            <Text color="purple.500" fontWeight="bold" >Notas de la ultima versión:</Text>
             <Text>{apiText}</Text>
           </ModalBody>
 
