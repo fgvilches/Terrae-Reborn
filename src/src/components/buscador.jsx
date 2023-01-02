@@ -1,8 +1,10 @@
 import React from 'react'
-import { IconButton, ButtonGroup, Container, ChakraProvider, Stack, Input, Grid, Flex, Text, Badge, Box, Select, Button, List, Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, } from '@chakra-ui/react'
+import { IconButton, ButtonGroup, Container, ChakraProvider, Stack, Input, Grid, Flex, Text, Badge, Box, Select, Button, 
+  List, Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, Modal, ModalOverlay, ModalContent, ModalHeader, 
+  ModalFooter, ModalBody, ModalCloseButton,} from '@chakra-ui/react'
 import { EmailIcon, ChevronDownIcon } from '@chakra-ui/icons'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
-
+import { useDisclosure } from '@chakra-ui/react'
 import axios from 'axios';
 import { useState,useEffect } from 'react'
 const carreras = [{
@@ -114,12 +116,13 @@ const carreras = [{
   description: "Publicidad"
 }
 ];
-var namesearch_display = 'none'
+var namesearch_display = 'none';
 const baseURL = "https://fgvilches.ninja/api/";
 function Buscador(){
   var today = new Date(),
   date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
   var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const [NuevaCarreraNombre, setNuevaCarreraNombre] = useState('ACT');
   const [NombreRamo, setNombreRamo] = useState('');
   const [Nombres, setNombres] = useState([]);
@@ -127,6 +130,7 @@ function Buscador(){
   const [NombreProfesor, setNombreProfesor] = useState('');
   const [NRC, setNRC] = useState('');
   const [Ramos, setRamos] = useState([]);
+  const [apiText, setapiText] = useState('');
   function filter() {
     // Declare variables
     var input, filter, table, tr, td, i, txtValue;
@@ -243,8 +247,45 @@ function Buscador(){
     }
     
   }
+  function openModal() {
+    onOpen()
+  }
+  async function handleChangeCommits(){
+    const response = await axios.get("https://api.github.com/users/fgvilches/events");
+    for(var i = 0, keys = Object.keys(response.data), ii = keys.length; i < ii; i++){
+      //console.log(response.data[keys[i]]['payload']['commits'][0]['message'])
+      if(response.data[keys[i]]['repo']['name'] === "fgvilches/ui_betterfinis"){
+        setapiText(response.data[keys[i]]['payload']['commits'][0]['message'])
+        return 0 
+    
+    }
+  }
+}
+  useEffect(() => {
+  openModal()
+  handleChangeCommits()
+  }, [])
   return (
   <ChakraProvider resetCSS>
+    
+    <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Notas de la ultima versión: </ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text>{apiText}</Text>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme='blue' mr={3} onClick={onClose}>
+              Close
+            </Button>
+            
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+      
     <Flex
       display="flex"
       flexDirection="column"
@@ -331,6 +372,7 @@ function Buscador(){
               <Thead>
                 <Tr>
                   <Th align='left'>Nombre</Th>
+                  <Th align='left'>Código</Th>
                   <Th align='left'>NRC</Th>
                   <Th align='left'>Horario</Th>
                   <Th align='left'>Profesor</Th>
@@ -340,9 +382,10 @@ function Buscador(){
                 {Ramos.map((ramo) => (
                   <Tr>
                     <Td >{ramo.courseTitle}</Td>
+                    <Td >{ramo.courseNumber}</Td>
                     <Td >{ramo.courseReferenceNumber}</Td>
                     <Td>{handleChangedatosHorario(ramo)}</Td>
-                    <Td>{handleChangeNombreProfesor(ramo)}</Td>
+                    <Td>{handleChangeNombreProfesor(ramo)}</Td>  
                   </Tr>
                 ))}
               </Tbody>
@@ -384,7 +427,7 @@ function Buscador(){
         </ButtonGroup>
       </Stack>
       <Text fontSize="sm" color="subtle">
-        &copy; {new Date().getFullYear()} Hecho con 🖤 por @fgvilches.
+        &copy; {new Date().getFullYear()} Hecho con 🖤 por @fgvilches. | TerraeReborn - V0.0.4
       </Text>
     </Stack>
   </Container>

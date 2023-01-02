@@ -15,14 +15,19 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.1.2",
     "axios": "^1.2.2",
+    "browserify-zlib": "^0.2.0",
     "cors": "^2.8.5",
     "framer-motion": "^8.0.2",
+    "https": "^1.0.0",
+    "https-browserify": "^1.0.0",
+    "querystring": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "banner":"^0.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
