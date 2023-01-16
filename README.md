@@ -10,7 +10,7 @@ PWA para consultar los nrcs de las asignatura en la universidad finis terrae.
 Visible en : https://terraereborn.fgvilches.ninja/
 
 ## Contenidos
-- [Por qué](#Por qué)
+- [Por qué](#por-qué)
 - [Como](#como)
 - [Changelog](#changelog)
 - [Soporte y discusión](#soporte)
