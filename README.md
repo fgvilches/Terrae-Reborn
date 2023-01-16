@@ -1,4 +1,4 @@
-![Twitter Follow](https://img.shields.io/twitter/follow/fgvilches?style=social) 
+<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/fgvilches?style=social" href="twitter.com/fgvilches">
 ![GitHub followers](https://img.shields.io/github/followers/fgvilches?style=social)
 
 # Terrae-Reborn
