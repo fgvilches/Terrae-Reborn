@@ -62,7 +62,9 @@ Si tienes cualquier duda sobre este proyecto no dudes escribirme a fgvilches@icl
 
 ---
 <a href="https://fgvilches.ninja/"><img alt="https://img.shields.io/badge/-fgvilches.ninja-yellow"></a>
+  
 <a href="https://bajamach.com/jA5a9ZyeEwb"><img alt="Si este proyecto te es util, considera donarme!" src="https://img.shields.io/badge/Donar-MACH-blueviolet"></a>
+  
 <a href="https://www.paypal.me/fgvilches1"><img alt="Si este proyecto te es util, considera donarme!" src="https://img.shields.io/badge/Donar-Paypal-blue"></a>
-<a href="https://github.com/fgvilches"><img alt="Si este proyecto te es util, considera donarme!" src="https://img.shields.io/badge/Donar-Paypal-blue"></a>
+  
 Cripto ETH,BSC,PolyGon: 0x537D586a1ae78645D877db2A9215bF68b697D290
