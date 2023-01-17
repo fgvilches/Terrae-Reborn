@@ -66,6 +66,15 @@ V.0.1
 Si tienes cualquier duda sobre este proyecto no dudes escribirme a fgvilches@icloud.com o en discord a **shift#3448**
 
 ---
+Si este proyecto te ha sido util, considera donarme! 
+ 
+<div align="left">
+  <br>
+  <img src="github-files/giphy.gif" alt="diagrama de arq" width="20%">
+  <br>
+</div>
+ 
+ 
 <a href="https://fgvilches.ninja/"><img alt="Mi web!" src="https://img.shields.io/badge/-fgvilches.ninja-yellow"></a>
   
 <a href="https://bajamach.com/jA5a9ZyeEwb"><img alt="Si este proyecto te es util, considera donarme!" src="https://img.shields.io/badge/Donar-MACH-blueviolet"></a>
