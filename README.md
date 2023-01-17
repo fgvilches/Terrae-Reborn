@@ -7,7 +7,9 @@
 
 PWA para consultar los nrcs de las asignatura en la universidad finis terrae.
 
-Visible en : https://terraereborn.fgvilches.ninja/
+Visible en :   
+ 
+ <a href="https://terraereborn.fgvilches.ninja"><img alt="TerraeReborn!" src="https://img.shields.io/badge/-TerraeReborn!-blueviolet"></a>
 
 ## Contenidos
 - [Por qué](#por-qué)
@@ -28,7 +30,10 @@ La idea de terrae reborn es facilitar el acceso a la informacion sobre los ramos
 
 ### Explicacion URL Endpoints
 Si necesitas saber como funcionan los endpoints de Banner (el erp de terrae) puedes verlo en la siguiente URL:
-https://github.com/schedulemaker/bannerjs/wiki/URL-Endpoints
+
+<a href="https://github.com/schedulemaker/bannerjs/wiki/URL-Endpoints"><img alt="TerraeReborn!" src="https://img.shields.io/badge/-URL-blue"></a>
+
+
 
 Pero en resumen se tienen 2 endpoints que requieren que se envíe una ID de sesión y una cookie con la solicitud para poder sacar los datos de banner, pero podemos obtener una cookie para hacer las consultas de la siguiente manera:
 
@@ -58,7 +63,7 @@ V.0.0.4
 V.0.1
 - Initial Release
 ## Soporte y discusión
-Si tienes cualquier duda sobre este proyecto no dudes escribirme a fgvilches@icloud.com o en discord a shift#3448
+Si tienes cualquier duda sobre este proyecto no dudes escribirme a fgvilches@icloud.com o en discord a **shift#3448**
 
 ---
 <a href="https://fgvilches.ninja/"><img alt="Mi web!" src="https://img.shields.io/badge/-fgvilches.ninja-yellow"></a>
