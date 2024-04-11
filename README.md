@@ -5,8 +5,7 @@
 
 ![Terra Reborn](github-files/banner_img.png)
 
-PWA para consultar los nrcs de las asignatura en la universidad finis terrae.
-
+PWA para consultar los nrcs de las asignatura en mi universidad.
 Visible en :   
  
  <a href="https://terraereborn.fgvilches.ninja"><img alt="TerraeReborn!" src="https://img.shields.io/badge/-TerraeReborn!-blueviolet"></a>
